@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Body Fat Calculator</title>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <h1>Body Fat Calculator</h1>
+            <form action="#" id="user-data">
+                <fieldset>
+                    <label for="name" id="name-label">Name:
+                        <input type="text" id="name" placeholder="Cinderella" required>
+                    </label>
+                    <label for="gender" id="gender-label">Choose your gender: <br>
+                        <input type="radio" name="male-female" id="male" value="Male"> Male
+                        <input type="radio" name="male-female" id="female" value="Female"> Female
+                    </label>
+                    <label for="height" id="height-label">Your height in centimeters:
+                        <input type="text" id="height" placeholder="170" required>
+                    </label>
+                    <label for="waist" id="waist-label"> Your waist size in centimeters:
+                        <input type="text" id="waist" placeholder="80">
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <input type="submit" name="submit" id="submit" value="Check your results" onclick="count()">
+                    <input type="reset" name="reset" id="reset" value="Reset">
+                </fieldset>
+            </form>
+            <p id="result"></p>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
